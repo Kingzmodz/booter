@@ -1,0 +1,28 @@
+#!/bin/bash
+GREEN='\e[0;32m'
+RED='\e[0;31m'
+LIGHTGRAY='\e[0;37m'
+WHITE='\e[1;37m'
+
+clear
+echo -e " ${RED} "
+echo " []=================================================== [] "
+echo "                _   _   _   _   _     _   _               "
+echo "               / \ / \ / \ / \ / \   / \ / \              "
+echo "              ( B | L | A | C | K ) ( B | 3 )             "
+echo "               \_/ \_/ \_/ \_/ \_/   \_/ \_/              "
+echo "                                                          "
+echo " []==========Press CTRL + C To Cancel The Ddos=========[] "
+echo "                                                          "
+echo -e " ${LIGHTGRAY} "                                                     
+echo "Enter IP Address : "
+read IP
+echo "Enter Port : "
+read Port
+echo "Enter Size [1-65500] : "
+read Size
+echo "Enter The Time : "
+read Time
+echo -e " ${GREEN} "
+perl dos.pl $IP $Port $Size $Time
+clear 
